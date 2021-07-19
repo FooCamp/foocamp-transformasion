@@ -1,6 +1,6 @@
 {
-  "name": "nintendo-games",
-  "version": "0.0.0",
+  "name": "foocamp-transformasion",
+  "version": "1.0.0",
   "scripts": {
     "stacy:serve": "stacy serve",
     "stacy:build": "stacy generate",
