@@ -20,3 +20,14 @@ $breakpoints: (
         + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
+
+$fonts-folder-url: "../../assets/fonts/";
+
+@mixin font-face($family, $name, $style) {
+	font-family: $family;
+	src: url($fonts-folder-url+$name+".woff2") format("woff2"),
+		url($fonts-folder-url+$name+".woff") format("woff"),
+		url($fonts-folder-url+$name+".ttf") format("truetype");
+	font-display: swap;
+  font-style: $style;
+}

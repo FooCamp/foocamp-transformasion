@@ -17,6 +17,11 @@
 # js bundle
 /static/*.js
 
+# fonts
+/static/*.ttf
+/static/*.woff2
+/static/*.woff
+
 # misc
 stacy-debug.log
 /npm-debug.log
