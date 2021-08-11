@@ -1,3 +1,39 @@
 .header {
   height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 25px;
+  @include breakpoint (lg) {
+    margin: 0px 60px;
+  }
+  
+  &__logo--small{
+    width: 48px;
+    height: 17.5px;
+    @include breakpoint (lg) {
+      display: none;
+      }
+  }
+  &__logo{
+    display: none;
+    @include breakpoint (lg) {
+      display: inline-block;
+      width: 279px;
+      height: 56px;
+    }
+  }
+  &__hamburguer{
+    width: 24px;
+    height: 16.6px;
+    @include breakpoint (lg) {
+      display: none;
+    }
+  }
+  &__links{
+    display: none;
+    @include breakpoint (lg) {
+      display: flex;
+    }
+  } 
 }
