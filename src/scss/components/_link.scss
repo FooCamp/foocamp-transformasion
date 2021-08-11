@@ -1,0 +1,51 @@
+.link {
+    font-size: 16px;
+    font-family: $font-coolvetica-regular;
+
+    &__icon.fab,
+    &__label {
+      display: none;
+      color:var(--pink);
+      height: 16px;
+    }
+    &__label {
+        .link--normal & {
+            margin-top: 48px;
+            display: inline;
+            color:var(--black);
+            &:hover,
+            &:visited {
+                text-decoration: none;
+                color:var(--pink);
+            }
+        }
+    }
+    &__icon {
+        margin: 8px;
+    }
+    &__icon--whatsapp {
+        .link--whatsapp & {
+            display: inline;
+        }
+    }
+    &__icon--facebook {
+        .link--facebook & {
+            display: inline;
+        }
+    }
+    &__icon--youtube {
+        .link--youtube & {
+            display: inline;
+        }
+    }
+    &__icon--instagram {
+        .link--instagram & {
+            display: inline;
+        }
+    }
+    &__icon--twitter {
+        .link--twitter & {
+            display: inline;
+        }
+    }  
+}
