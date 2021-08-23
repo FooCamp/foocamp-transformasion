@@ -64,9 +64,10 @@
         justify-content: center;
     }
     &__copyright {
-        width: 36%;
-        margin: 120px  32%;
-        margin-bottom: 18px;
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 58px;
         @include breakpoint (lg) {
             width: 14%;
             margin-top: 54px;
