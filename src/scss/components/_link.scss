@@ -1,4 +1,4 @@
-.link {
+.footerlink {
     font-size: 16px;
     font-family: $font-coolvetica-regular;
 
@@ -9,7 +9,7 @@
       height: 16px;
     }
     &__label {
-        .link--normal & {
+        .footerlink--normal & {
             margin-top: 48px;
             display: inline;
             color:var(--black);
@@ -24,27 +24,27 @@
         margin: 8px;
     }
     &__icon--whatsapp {
-        .link--whatsapp & {
+        .footerlink--whatsapp & {
             display: inline;
         }
     }
     &__icon--facebook {
-        .link--facebook & {
+        .footerlink--facebook & {
             display: inline;
         }
     }
     &__icon--youtube {
-        .link--youtube & {
+        .footerlink--youtube & {
             display: inline;
         }
     }
     &__icon--instagram {
-        .link--instagram & {
+        .footerlink--instagram & {
             display: inline;
         }
     }
     &__icon--twitter {
-        .link--twitter & {
+        .footerlink--twitter & {
             display: inline;
         }
     }  
