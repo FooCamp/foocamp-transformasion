@@ -64,12 +64,12 @@
         justify-content: center;
     }
     &__copyright {
-        font-size: 15px;
-        line-height: 24px;
+        font-family: $font-family-regular;
+        font-size: 1.5rem;
+        color:var(--secondgrey);
         text-align: center;
         margin-top: 58px;
         @include breakpoint (lg) {
-            width: 14%;
             margin-top: 54px;
         }
     }
