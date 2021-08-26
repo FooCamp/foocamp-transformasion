@@ -1,0 +1,23 @@
+.hero {
+    padding: 16px;
+
+    &__title b {
+        color: var(--pink);
+    }
+
+    &__image {
+        position: relative;
+        max-height: 250px;
+        object-fit: cover;
+        object-position: bottom;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 90%;
+            width: 70%;
+            background-color: var(--pink);
+            left: -16px;
+        }
+    }
+}
