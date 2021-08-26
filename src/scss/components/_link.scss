@@ -1,51 +1,55 @@
-.footerlink {
-    font-size: 16px;
-    font-family: $font-coolvetica-regular;
+.link {
+  font-size: 16px;
+  font-family: $font-coolvetica-regular;
 
-    &__icon.fab,
-    &__label {
-      display: none;
-      color:var(--pink);
-      height: 16px;
+  &__icon.fab,
+  &__label {
+    display: none;
+    margin-right: 20px;
+    color:var(--pink);
+    height: 16px;
+  }
+
+  &__label {
+    .link--normal & {
+      display: inline;
+      margin-right: 50px;
+      color:var(--black);
+      &:hover,
+      &:active {
+        text-decoration: none;
+        color:var(--pink);
+      }
     }
-    &__label {
-        .footerlink--normal & {
-            margin-top: 48px;
-            display: inline;
-            color:var(--black);
-            &:hover,
-            &:visited {
-                text-decoration: none;
-                color:var(--pink);
-            }
-        }
+  }
+
+  &__icon--whatsapp {
+    .link--whatsapp & {
+      display: inline;
     }
-    &__icon {
-        margin: 8px;
+  }
+
+  &__icon--facebook {
+    .link--facebook & {
+      display: inline;
     }
-    &__icon--whatsapp {
-        .footerlink--whatsapp & {
-            display: inline;
-        }
+  }
+
+  &__icon--youtube {
+    .link--youtube & {
+      display: inline;
     }
-    &__icon--facebook {
-        .footerlink--facebook & {
-            display: inline;
-        }
+  }
+
+  &__icon--instagram {
+    .link--instagram & {
+      display: inline;
     }
-    &__icon--youtube {
-        .footerlink--youtube & {
-            display: inline;
-        }
+  }
+
+  &__icon--twitter {
+    .link--twitter & {
+      display: inline;
     }
-    &__icon--instagram {
-        .footerlink--instagram & {
-            display: inline;
-        }
-    }
-    &__icon--twitter {
-        .footerlink--twitter & {
-            display: inline;
-        }
-    }  
+  }
 }
