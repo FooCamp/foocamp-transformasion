@@ -1,50 +1,55 @@
 .link {
-    font-size: 16px;
-    font-family: $font-coolvetica-regular;
+  font-size: 16px;
+  font-family: $font-coolvetica-regular;
 
-    &__icon.fab,
-    &__label {
-      display: none;
-      margin-right: 20px;
-      color:var(--pink);
-      height: 16px;
+  &__icon.fab,
+  &__label {
+    display: none;
+    margin-right: 20px;
+    color:var(--pink);
+    height: 16px;
+  }
 
+  &__label {
+    .link--normal & {
+      display: inline;
+      margin-right: 50px;
+      color:var(--black);
+      &:hover,
+      &:active {
+        text-decoration: none;
+        color:var(--pink);
+      }
     }
-    &__label {
-        .link--normal & {
-            display: inline;
-            margin-right: 50px;
-            color:var(--black);
-            &:hover,
-            &:active {
-              text-decoration: none;
-              color:var(--pink);
-            }
-        }
+  }
+
+  &__icon--whatsapp {
+    .link--whatsapp & {
+      display: inline;
     }
-    &__icon--whatsapp {
-        .link--whatsapp & {
-            display: inline;
-        }
+  }
+
+  &__icon--facebook {
+    .link--facebook & {
+      display: inline;
     }
-    &__icon--facebook {
-        .link--facebook & {
-            display: inline;
-        }
+  }
+
+  &__icon--youtube {
+    .link--youtube & {
+      display: inline;
     }
-    &__icon--youtube {
-        .link--youtube & {
-            display: inline;
-        }
+  }
+
+  &__icon--instagram {
+    .link--instagram & {
+      display: inline;
     }
-    &__icon--instagram {
-        .link--instagram & {
-            display: inline;
-        }
+  }
+
+  &__icon--twitter {
+    .link--twitter & {
+      display: inline;
     }
-    &__icon--twitter {
-        .link--twitter & {
-            display: inline;
-        }
-    }
+  }
 }
