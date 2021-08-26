@@ -5,19 +5,22 @@
         color: var(--pink);
     }
 
-    &__image {
+    &__imageWrapper{
         position: relative;
-        max-height: 250px;
-        object-fit: cover;
-        object-position: bottom;
 
         &::before {
             content: '';
             position: absolute;
-            height: 90%;
-            width: 70%;
+            height: 250px;
+            width: 250px;
             background-color: var(--pink);
             left: -16px;
         }
+    }
+
+    &__image {
+        max-height: 250px;
+        object-fit: cover;
+        object-position: bottom;
     }
 }
