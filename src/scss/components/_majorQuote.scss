@@ -1,6 +1,12 @@
 .majorQuote{
     color: var(--black);
 
+    &--right {
+        .majorQuote__title--container {
+            justify-content: flex-end !important;
+        }
+    }
+
     @include breakpoint (lg){
         display: flex;
         margin: 15em auto;
@@ -11,6 +17,10 @@
             .majorQuote__title{
                 margin-bottom: 0;
                 top: 0;
+            }
+
+            .majorQuote__title--container {
+                justify-content: flex-start !important;
             }
         }
 
