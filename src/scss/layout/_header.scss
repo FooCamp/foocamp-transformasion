@@ -1,3 +1,58 @@
 .header {
   height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 25px;
+  @include breakpoint (lg) {
+    margin: 0px 60px;
+  }
+  
+  &__logo--small{
+    width: 48px;
+    height: 17.5px;
+    margin-left: 10px;
+    @include breakpoint (lg) {
+      display: none;
+      }
+  }
+  &__logo{
+    display: none;
+    @include breakpoint (lg) {
+      display: inline-block;
+      width: 279px;
+      height: 56px;
+    }
+  }
+  &__sticky {
+    position:sticky;
+    top: 20px;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    height: 56px;
+    .header__logo--small {
+      @include breakpoint (lg) {
+        display: inline-block;
+      }
+    }
+    .header__logo {
+      @include breakpoint (lg) {
+        display: none;
+      }
+    }
+  }
+  &__hamburguer{
+    width: 24px;
+    height: 16.6px;
+    margin-right: 10px;
+    @include breakpoint (lg) {
+      display: none;
+    }
+  }
+  &__links{
+    display: none;
+    @include breakpoint (lg) {
+      display: flex;
+    }
+  } 
 }
