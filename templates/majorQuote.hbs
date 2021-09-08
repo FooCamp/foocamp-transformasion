@@ -1,0 +1,8 @@
+<section class="container majorQuote {{#if isImageRightAligned}}majorQuote--right{{/if}}">
+    <div class="majorQuote__image">
+        <img src="{{assetSrc image}}" alt="{{imageAltText}}">
+    </div>
+    <div class="row justify-content-start align-items-end majorQuote__title--container">
+        <h3 class="{{#if isBigText}}h3-big{{/if}} majorQuote__title col-9 col-lg-12 {{#if isBigText}}offset-lg-1{{/if}}">{{{quote}}}</h3>
+    </div>
+</section>
