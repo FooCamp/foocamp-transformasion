@@ -1,0 +1,17 @@
+<section class="container team">
+    <div class="team__wrapper row align-items-center">
+        <div class="team__text col-lg-5">
+            <hr class="d-flex">
+            <h2 class="team__title col-6 col-lg-12">{{title}}</h2>
+            <p class="team__description">{{description}}</p>
+        </div>
+        <div class="team__members col-lg-6">
+            <div class="decoration team__gridItem"></div>
+            {{#each members}}
+                {{{module this}}}
+            {{/each}}
+            <div class="decoration team__gridItem"></div>
+        </div>
+
+    </div>
+</section>

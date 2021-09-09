@@ -1,0 +1,95 @@
+.team{
+    color: var(--black);
+
+    @include breakpoint (lg){
+        margin: 5em auto;
+    }
+
+    @include breakpoint (xl){
+
+        &__wrapper{
+            justify-content: space-between;
+        }
+    }
+
+    &__text{
+
+        hr{
+            height: 0.3em;
+            width: 6.4em;
+            background-color: var(--pink);
+            margin-bottom: 3.2em;
+            border: none;
+            margin-left: 0;
+        }
+    }
+
+    &__title{
+        margin-bottom: 0;
+        padding-left: 0 !important;
+    }
+
+    &__description{
+        margin: 5.6rem 0;
+    }
+
+    &__members{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 1.6em;
+
+        @include breakpoint (md){
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 3.2em;
+        }
+
+        .decoration{
+            width: 15.5em;
+            height: 8.8em;
+            background-color: var(--pink);
+
+            &:first-child {
+                align-self: flex-end;
+            }
+        }
+    }
+    
+    &__gridItem {
+        position: relative;
+
+        &:nth-child(even) {
+            top: 10rem;
+        }
+
+        &:nth-child(odd) {
+            bottom: 10rem;
+        }
+
+        @include breakpoint (md){
+            &:nth-child(even) {
+                top: unset;
+            }
+    
+            &:nth-child(odd) {
+                bottom: unset;
+            }
+
+            &:first-child{
+                grid-column-start: 3;
+            }
+
+            &:last-child{
+                grid-column-start: 2;
+            }
+
+            &:nth-child(3n), &:last-child{
+                bottom: 7em;
+            }
+
+            &:nth-child(3n+4), &:first-child{
+                bottom: 2em;
+            }
+        }
+    }
+}

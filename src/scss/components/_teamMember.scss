@@ -1,0 +1,30 @@
+.member{
+    position: relative;
+    width: 15.5em;
+
+    &__photo{
+        height: 21.8em;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__info{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 100%);
+        color: var(--white);
+        padding: 3.8em 0 1.6em 0.8em;
+    }
+
+    &__name{
+        font-family: $font-family-regular;
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+        line-height: 100%;
+    }
+    &__role{
+        line-height: 100%;
+        margin: 0;
+    }
+}
