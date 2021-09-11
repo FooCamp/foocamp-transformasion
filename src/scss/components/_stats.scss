@@ -1,0 +1,6 @@
+.stats {
+    @include breakpoint (lg) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
