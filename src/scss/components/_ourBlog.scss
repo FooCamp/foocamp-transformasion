@@ -1,0 +1,52 @@
+.blog{
+
+    display: flow-root;
+    margin: 6em auto;
+    margin-bottom: 11.8em;
+    color: var(--black);
+    text-align: center;
+    
+
+    @include breakpoint (lg){
+        margin: 10em auto;
+        margin-bottom: 20em;
+    }
+    
+    hr{
+        height: 0.3em;
+        width: 6.4em;
+        background-color: var(--pink);
+        margin-bottom: 3.2em;
+        border: none;
+    }
+
+    &__description{
+        margin: 6.4rem auto;
+        padding: 0 0.6rem;
+
+        @include breakpoint (lg){
+            margin-bottom: 7rem;
+        }
+    }
+
+    &__button{
+        border: 3px solid var(--black);
+        padding: 20px 70px;
+        display: inline-block;
+        background: none;
+        color: var(--black);
+        
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: $font-family-condensed;
+        font-size: 2.4rem;
+        letter-spacing: 0.25em;
+
+        &:hover{
+            color: var(--pink);
+            border: 3px solid var(--pink);
+        }
+        
+    }
+    
+}
