@@ -4,7 +4,7 @@
          <h1 class="hero__title col-lg-9">{{{title}}}</h1>
          <div class="hero__imageWrapper">
             <img src="{{assetSrc cover}}" class="hero__image"/>
-            <button class="hero__button"><img src="/images/icon-play.svg" alt="play"></button>
+            <button class="hero__button open-modal-button" type="button" data-open="modal-video-hero"><img src="/images/icon-play.svg" alt="play"></button>
          </div>
       </div>
       <div class="hero__scroll justify-content-center d-lg-none">
@@ -13,6 +13,16 @@
       </div>
       <div class="hero__description row justify-content-end">
          <p class="p-big col-8">{{{description}}}</p>
+      </div>
+   </div>
+   {{!-- Modal --}}
+   <div class="modal fade" id="modal-video-hero" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+         <button type="button" class="modal__close-btn"><i class="icon fas fa-times"></i></button>
+         <video class="modal__video" src="{{assetSrc video}}" controls ></video>
+         {{!-- <div class="modal-container">
+            
+         </div> --}}
       </div>
    </div>
 </section>
