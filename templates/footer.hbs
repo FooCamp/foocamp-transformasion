@@ -1,0 +1,27 @@
+<footer class="container--color">
+  <div class="footer">
+    <div class="footer__logo">
+      <a class="footer__logo-link" href="/index.html"><img src="/images/transformasion-logo-large.png" alt="Transformasion"></a>
+    </div>
+
+    <ul class="footer__nav">
+      {{#each navLinks}}
+        <li class="footer__nav--space">
+          {{{module this}}}
+        </li>
+      {{/each}}
+    </ul>
+
+    <hr class="footer__line"></hr>
+
+    <ul class="footer__social">
+      {{#each socialLinks}}
+        <li>
+          {{{module this}}}
+        </li>
+      {{/each}}
+    </ul>
+
+    <p class="footer__copyright">{{copyright}}</p>
+  </div>
+</footer>

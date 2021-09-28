@@ -1,0 +1,66 @@
+.section__container{
+    background-color: var(--bisque);
+    padding: 60px 20px;
+}
+
+.info {
+    background-color: var(--white);
+    padding:0px;
+    @include breakpoint (lg) {
+        display: flex;
+        margin: 40px 172px;
+    }
+
+    &__image {
+        z-index: 1;
+        position: relative;
+        padding-bottom: 53px;
+        @include breakpoint (lg) {
+            padding-right: 20px;
+            margin: 80px 20px 15px 0px;
+            min-width: 538px;
+            left: -100px;
+        }
+    }
+
+    &__text-title {
+        padding: 0px 25px 32px;
+        margin: 0px;
+        @include breakpoint (lg) {
+            max-width: 479px;
+            margin: 40px 0px 0px;
+        }
+    }
+
+    &__text-description {
+        padding: 0px 25px 60px;
+        @include breakpoint (lg) {
+          max-width: 470px;
+        }
+    }
+    
+    &__line{
+        border: 2px solid;
+        border-color: var(--pink);
+        max-width: 80px;
+        margin-left: 25px;
+        margin-bottom: 20px;
+        @include breakpoint (lg) {
+            margin-top: 80px;
+        }
+    }
+
+    &__block {
+        position:absolute;
+        width: 160px;
+        height: 160px;
+        background-color: var(--pink);
+        z-index: -1;
+        bottom: 30px;
+        right: -7%;
+        @include breakpoint (lg) {
+          bottom: 30px;
+          right: -1%;
+        }
+    }
+}
