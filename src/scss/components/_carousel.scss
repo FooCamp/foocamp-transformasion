@@ -1,0 +1,44 @@
+.carousel{
+    display: flow-root;
+    background: linear-gradient(180deg, var(--bisque) 0, var(--bisque) 30%, var(--white) 30%);
+    padding-top: 6em;
+    padding-bottom: 10em;
+    overflow-x: hidden;
+
+    &__track{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 500px;
+        padding-left: 30px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &__button{
+        background-color: var(--white);
+        padding: 20px 60px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: $font-family-condensed;
+        text-align: center;
+        letter-spacing: 0.25rem;
+        color: var(--black);
+        border: 3px solid var(--black);
+
+        
+        position: absolute;
+        display: block;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 60px;
+        max-width: 268px;
+
+        &:hover{
+            border-color: var(--pink);
+            color: var(--pink);
+        }
+        
+    }
+}
