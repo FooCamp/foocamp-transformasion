@@ -6,10 +6,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
     cards.forEach((card, index) => {
         card.addEventListener('click', () => {
+            if(card.classList.contains('card--active'))return;
+            const inactiveCardSize = card.clientWidth + 16;
+
             cards.forEach(otherCard => otherCard.classList.remove('card--active'));
+            
+            track.style.transform = `translateX(-${inactiveCardSize*index}px)`;
             card.classList.add('card--active');
 
-            track.style.transform = `translateX(-${239*index}px)`;
         })
     });
 });

@@ -1,9 +1,14 @@
 .carousel{
+    --card-size: 157px;
     display: flow-root;
     background: linear-gradient(180deg, var(--bisque) 0, var(--bisque) 30%, var(--white) 30%);
     padding-top: 6em;
     padding-bottom: 10em;
     overflow-x: hidden;
+
+    @include breakpoint (lg){
+        --card-size: 457px;
+    }
 
     &__track{
         display: flex;
@@ -11,7 +16,7 @@
         align-items: center;
         justify-content: flex-start;
         min-height: 500px;
-        padding-left: 30px;
+        padding-left: calc(50vw - var(--card-size));
         transition: transform 0.3s ease-in-out;
     }
 

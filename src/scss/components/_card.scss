@@ -11,9 +11,11 @@
     
 
     .container{
-        display: none;
         color: var(--white);
+        transition: opacity 1s ease-in 1ms;
         opacity: 0;
+        height: 0;
+        overflow: hidden;
     }
     .card__image{
         position: relative;
@@ -54,10 +56,10 @@
         width: 29.8em;
 
         .container{
-            display: block;
             top: auto;
             bottom: 5.5em;
             opacity: 1;
+            height: auto;
         }
 
     }
