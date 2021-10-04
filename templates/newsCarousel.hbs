@@ -1,0 +1,32 @@
+<section class="news-carousel news-carousel--{{backgroundColor}}">
+  <div class="container news-carousel__container">
+    <div class="news-carousel__header">
+      <h2 class="news-carousel__title">{{title}}</h2>
+      <div class="controls controls--desk">
+        <button class="controls__button controls__button--left controls__button--disabled" disabled>
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="controls__button controls__button--right">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <ul class="news-carousel__cards">
+      {{#each cards}}
+        <li class="news-carousel__card">
+          {{{module this}}}
+        </li>
+      {{/each}}
+    </ul>
+
+    <div class="controls controls--sm">
+      <button class="controls__button controls__button--left controls__button--disabled" disabled>
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="controls__button controls__button--right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
