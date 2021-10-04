@@ -1,7 +1,7 @@
 function openModal(event) {
     const target = event.target;
     const modal = document.querySelector(`#${target.dataset.open}`);
-    const body = document.querySelector('body');
+    const body = document.body;
     const bg = document.createElement('div');
 
     modal.style.display = 'block';
@@ -19,7 +19,7 @@ function closeModal(event) {
     const target = event.target;
     const modal = target.closest('.modal');
     const bg = document.querySelector('.modal-backdrop');
-    const body = document.querySelector('body');
+    const body = document.body;
 
     modal.classList.remove('show');
     bg.classList.remove('show');
