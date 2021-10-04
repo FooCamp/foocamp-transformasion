@@ -6,10 +6,44 @@
     <div class="header__logo--small">
         <a href="/index.html"> <img src="/images/transformasion-logo-small.png" alt="TransformaSion"></a>
     </div>
-    <div class="header__hamburguer">
+    {{!-- <div class="header__hamburguer">
         <img src="/images/hamburguer-icon.png" alt="hamburguer">
+    </div> --}}
+
+{{!-- Mobile menu --}}
+    <div class="header__hamburger">
+        <input type="checkbox" class="header__hamburger-checkbox" id="active">
+        <label for="active" class="header__hamburger-btn"><i class="fas fa-bars"></i></label>
+         <div class="wrapper">
+            <div class="wrapper__container">
+                <div class="wrapper__menu">
+                    <div class="wrapper__logo">
+                        <img src="/images/transformasion-logo-small.png" alt="TransformaSion">
+                    </div>
+                    <span class="wrapper__title">Menu</span>
+                </div>
+                <ul class="wrapper__nav-links">
+                {{#each navLinks}}
+                    <li class="wrapper__nav-item">
+                    {{{module this}}}
+                    </li>
+                {{/each}}
+                
+                </ul>
+
+                <ul class="wrapper__social-links">
+                {{#each socialLinks}}
+                    <li class="wrapper__social-item">
+                        {{{module this}}}
+                    </li>
+                {{/each}}
+                </ul>
+                <p class="wrapper__copyright">{{copyright}}</p>
+            </div>
+        </div>
     </div>
-    
+
+    {{!-- Desktop Menu --}}
     <!-- ul para header links y social links -->
     <ul class="header__links">
         {{#each navLinks}}
