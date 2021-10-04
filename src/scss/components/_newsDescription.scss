@@ -28,14 +28,15 @@
 
     &__title {
         padding-bottom: 24px;
+        color: var(--black);
         @include breakpoint (lg) {
             padding-bottom: 40px;
             margin: 60px 0px 0px;
         }
     }
 
-    &__description {
-        padding: 0px 25px 60px;
+    &__content {
+        color: var(--black);
     }
 
     &__block {
