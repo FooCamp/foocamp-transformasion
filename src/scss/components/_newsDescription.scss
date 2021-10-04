@@ -1,11 +1,11 @@
-.description__container{
-    padding: 60px 20px;
-}
-
 .description {
     padding:0px;
     @include breakpoint (lg) {
         display: flex;
+    }
+
+    &__container {
+        padding: 60px 20px; 
     }
 
     &__image {
