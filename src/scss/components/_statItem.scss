@@ -1,0 +1,28 @@
+.stat {
+
+    &__line {
+        border: 2px solid;
+        border-color: var(--pink);
+        max-width: 60px;
+        margin-top: 80px;
+        margin-bottom: 5px;
+    }
+    &__number {
+        color: var(--pink);
+    }
+    
+    &__title {
+        padding-bottom: 5px ;
+        @include breakpoint (lg) {
+            padding-bottom: 10px;
+        } 
+    }
+
+    &__source {
+        max-width: 315px;
+        font-size: 14px;
+        font-style: italic;
+        color: var(--grey);
+        margin-bottom: 60px;
+    }
+}
