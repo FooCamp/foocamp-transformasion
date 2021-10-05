@@ -1,6 +1,11 @@
 .section__container{
     background-color: var(--bisque);
     padding: 60px 20px;
+    padding-bottom: 280px;
+    @include breakpoint (lg) {
+        padding-bottom: 450px;
+    }
+
 }
 
 .info {
@@ -9,6 +14,11 @@
     @include breakpoint (lg) {
         display: flex;
         margin: 40px 150px;
+
+        &__text{
+            position: relative;
+            left: -10em;
+        }
     }
 
     &__image {
@@ -22,6 +32,8 @@
             left: -150px;
         }
     }
+
+   
 
     &__text-title {
         padding: 0px 25px 32px;

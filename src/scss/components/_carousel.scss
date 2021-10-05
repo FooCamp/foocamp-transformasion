@@ -1,13 +1,15 @@
 .carousel{
     --card-size: 157px;
     display: flow-root;
-    background: linear-gradient(180deg, var(--bisque) 0, var(--bisque) 30%, var(--white) 30%);
     padding-top: 6em;
     padding-bottom: 10em;
     overflow-x: hidden;
+    position: relative;
+    top: -20em;
 
     @include breakpoint (lg){
-        --card-size: 457px;
+        --card-size: 390px;
+        top: -34em;
     }
 
     &__track{
@@ -17,7 +19,11 @@
         justify-content: flex-start;
         min-height: 500px;
         padding-left: calc(50vw - var(--card-size));
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.5s ease-in-out;
+
+        @include breakpoint (lg){
+            min-height: 740px;
+        }
     }
 
     &__button{
@@ -27,10 +33,9 @@
         font-weight: 400;
         font-family: $font-family-condensed;
         text-align: center;
-        letter-spacing: 0.25rem;
+        letter-spacing: 0.25em;
         color: var(--black);
         border: 3px solid var(--black);
-
         
         position: absolute;
         display: block;
@@ -38,7 +43,11 @@
         left: 0;
         right: 0;
         bottom: 60px;
-        max-width: 268px;
+        max-width: fit-content;
+
+        @include breakpoint (lg){ 
+            padding: 20px 100px;
+        }
 
         &:hover{
             border-color: var(--pink);

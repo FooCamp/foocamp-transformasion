@@ -7,15 +7,39 @@
     flex-shrink: 0;
     transition-property: height, width;
     transition-timing-function: ease-in-out;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
+
+    @include breakpoint (lg){
+        height: 45.3em;
+        width: 41.8em;
+        margin: 0 66px;
+
+        &-img-overlay{
+            padding-left: 3.2em;
+            padding-right: 7em;
+            top: auto;
+            bottom: 5.5em;
+        }
+    }
     
 
     .container{
         color: var(--white);
-        transition: opacity 1s ease-in 1ms;
+        transition: opacity 0.5s ease-in 1ms;
         opacity: 0;
         height: 0;
         overflow: hidden;
+
+        @include breakpoint (lg){
+            opacity: 1;
+            height: auto;
+            
+            .card__description, .card__link{
+                opacity: 0;
+                height: 0;            
+            }
+
+        }
     }
     .card__image{
         position: relative;
@@ -40,6 +64,11 @@
     }
 
     &__link{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
         .p-big{
             color: var(--white);
             margin-right: 0.8em;
@@ -55,11 +84,28 @@
         height: 50em;
         width: 29.8em;
 
+        @include breakpoint (lg){
+            height: 70.5em;
+            width: 65em;
+        }
+
         .container{
             top: auto;
             bottom: 5.5em;
             opacity: 1;
             height: auto;
+
+            @include breakpoint (lg){
+                opacity: 1;
+                height: auto;
+                
+                .card__description, .card__link{
+                    transition: opacity 1s ease-in-out 0.2s;
+                    opacity: 1;
+                    height: auto;            
+                }
+    
+            }
         }
 
     }
