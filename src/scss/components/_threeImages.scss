@@ -1,9 +1,7 @@
 .images{
-    margin: 60px 0;
 
     &__item{
-        width: 80%;
-        height: 168px;
+        
 
         img{
             object-fit: cover;
@@ -24,20 +22,22 @@
 
     @include breakpoint(md){
         margin: auto;
-        margin-top: 168px;
-        margin-bottom: 200px;
+
+        margin-top: 60px;
+        margin-bottom: 100px;
+        
 
         &__item{
-            height: 297px;
             padding: 0 12px;
-            margin: auto;
 
             &:nth-child(2){
                 margin-top: -60px;
+                margin-bottom: 0;
             }
 
             &:last-child{
-                margin-bottom: -90px;
+                margin-top: 90px;
+                margin-bottom: 0;
             }
         }
     }
