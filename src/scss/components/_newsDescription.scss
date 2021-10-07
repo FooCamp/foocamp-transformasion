@@ -1,7 +1,5 @@
 .description {
-    
     padding:0px;
-
     @include breakpoint (lg) {
         display: flex;
     }
