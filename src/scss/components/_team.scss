@@ -11,18 +11,7 @@
             justify-content: space-between;
         }
     }
-
-    &__text{
-
-        hr{
-            height: 0.3em;
-            width: 6.4em;
-            background-color: var(--pink);
-            margin-bottom: 3.2em;
-            border: none;
-            margin-left: 0;
-        }
-    }
+   
 
     &__title{
         margin-bottom: 0;
@@ -92,4 +81,13 @@
             }
         }
     }
+}
+
+.decorationLine{
+    height: 0.3em;
+    width: 6.4em;
+    background-color: var(--pink);
+    margin-bottom: 3.2em;
+    border: none;
+    margin-left: 0;
 }
