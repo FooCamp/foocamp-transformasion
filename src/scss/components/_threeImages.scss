@@ -1,0 +1,45 @@
+.images{
+
+    &__item{
+        
+
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        &:nth-child(odd){ 
+            margin-bottom: 16px;
+        }
+
+        &:nth-child(even){
+            margin-bottom: 24px;
+            margin-left: auto;
+        }
+
+    }    
+
+    @include breakpoint(md){
+        margin: auto;
+
+        margin-top: 60px;
+        margin-bottom: 100px;
+        
+
+        &__item{
+            padding: 0 12px;
+
+            &:nth-child(2){
+                margin-top: -60px;
+                margin-bottom: 0;
+            }
+
+            &:last-child{
+                margin-top: 90px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+}
