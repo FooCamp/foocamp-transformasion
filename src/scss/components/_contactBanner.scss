@@ -1,0 +1,75 @@
+.contact {
+  background-color: var(--bisque);
+  padding: 88px 18px;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  @include breakpoint (lg) {
+    padding: 84px 112px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    @include breakpoint (lg) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__left {
+    color: var(--black);
+    text-align: center;
+
+    @include breakpoint (lg) {
+      text-align: left;
+      width: 650px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    @include breakpoint (lg) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__description {
+    margin-bottom: 60px;
+
+    @include breakpoint (lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__right {
+    text-align: center;
+
+    @include breakpoint (lg) {
+      width: 315px;
+    }
+  }
+
+  &__button {
+    display: block;
+    border: 3px solid var(--black);
+    padding: 13px 0;
+    background: var(--white);
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: $font-family-condensed;
+    font-size: 2.4rem;
+    letter-spacing: 0.25em;
+
+
+    &:hover{
+      color: var(--pink);
+      border: 3px solid var(--pink);
+    }
+  }
+}
