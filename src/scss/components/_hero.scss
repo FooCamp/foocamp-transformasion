@@ -81,6 +81,7 @@
 
         img{
             width: 1.8em;
+            pointer-events: none;
 
             @include breakpoint(lg){
                 width: 2.4em;

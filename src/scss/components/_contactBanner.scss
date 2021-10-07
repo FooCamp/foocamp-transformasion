@@ -1,80 +1,75 @@
-.contact{
-    padding-top: 88px;
-    padding-bottom: 88px;
-    background-color: var(--bisque);
-    display: block;
-    align-items: center;
-    margin-bottom: 0;
+.contact {
+  background-color: var(--bisque);
+  padding: 88px 18px;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  @include breakpoint (lg) {
+    padding: 84px 112px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    @include breakpoint (lg) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__left {
     color: var(--black);
-    text-align: start;
-    padding-left: 5%;
-    padding-right: 5%;
+    text-align: center;
 
-    @include breakpoint (lg){
-        margin-bottom: 11.8em;
-        padding-top: 0;
-        padding-bottom: 0;
-        display: flex;
-        margin-left: 4%;
-        margin-right: 4%;
-        padding-right: 12%;
-        padding-left: 10%;
+    @include breakpoint (lg) {
+      text-align: left;
+      width: 650px;
     }
+  }
 
-    &__left{
-        text-align: center;
-        
-        @include breakpoint (lg){
-            padding-right: 8%;
-        }
+  &__title {
+    margin-bottom: 24px;
 
+    @include breakpoint (lg) {
+      font-size: 3.2rem;
     }
-    
-    
-    &__title{
-        margin-bottom: 0;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 120%;
-        letter-spacing: 0.02em;
+  }
 
-        @include breakpoint (lg){
-            margin-top: 84px;
-            font-size: 32px;
-        }
+  &__description {
+    margin-bottom: 60px;
+
+    @include breakpoint (lg) {
+      margin-bottom: 0;
     }
+  }
 
-    &__description{
-        margin-top: 24px;
-        margin-bottom: 40px;
+  &__right {
+    text-align: center;
 
-        @include breakpoint (lg){
-            margin-bottom: 53px;
-        }
+    @include breakpoint (lg) {
+      width: 315px;
     }
+  }
 
-    &__right{
-        text-align: center;
+  &__button {
+    display: block;
+    border: 3px solid var(--black);
+    padding: 13px 0;
+    background: var(--white);
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: $font-family-condensed;
+    font-size: 2.4rem;
+    letter-spacing: 0.25em;
+
+
+    &:hover{
+      color: var(--pink);
+      border: 3px solid var(--pink);
     }
-
-    &__button{
-        border: 3px solid var(--black);
-        padding: 20px 70px;
-        background: var(--white);
-        color: var(--black);
-        text-transform: uppercase;
-        font-weight: 400;
-        font-family: $font-family-condensed;
-        font-size: 2.4rem;
-        letter-spacing: 0.25em;
-
-
-        &:hover{
-            color: var(--pink);
-            border: 3px solid var(--pink);
-        }
-        
-    }
-    
+  }
 }
