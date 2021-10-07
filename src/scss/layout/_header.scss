@@ -5,7 +5,6 @@
   background-color: var(--bisque);
 }
 .header {
-  z-index: 2;
   height: 90px;
   display: flex;
   justify-content: space-between;
@@ -16,7 +15,7 @@
   @include breakpoint (lg) {
     padding: 0px 60px;
   }
-  
+
   &__logo--small{
     width: 48px;
     height: 17.5px;
@@ -81,16 +80,23 @@
 
       & ~ .header__hamburger-btn {
         color: var(--black);
+        top: 16px;
 
         i:before{
           content: "\f00d";
+        }
+      }
+
+      .header__sticky & {
+        & ~ .header__hamburger-btn {
+          top: 20px;
         }
       }
     }
 
     &-btn {
       position: absolute;
-      z-index: 2;
+      z-index: 3;
       right: 20px;
       top: 20px;
       height: 50px;
@@ -103,6 +109,7 @@
       cursor: pointer;
       background: transparent;
       transition: clip-path 0.3s ease-in-out;
+      margin-bottom: 0;
     }
 
   }
@@ -111,7 +118,7 @@
     @include breakpoint (lg) {
       display: flex;
     }
-  } 
+  }
 }
 
 
@@ -128,6 +135,7 @@
   background-color: transparent;
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
+  z-index: 2;
 
   &__container {
     margin-top: 16px;
@@ -172,7 +180,7 @@
     text-align: center;
     margin-bottom: 138px;
   }
-  
+
   &__nav-item {
     &:not(:last-child) {
       margin-bottom: 64px;
@@ -207,7 +215,7 @@
     .link__icon.fab {
       color: var(--white);
       margin-right: 0;
-      
+
       &:not(:last-child) {
         margin-right: 16px;
       }
